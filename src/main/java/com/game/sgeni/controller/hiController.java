@@ -10,6 +10,6 @@ public class hiController {
 	@GetMapping
 	@ResponseBody
 	public String hi() {
-		return "hi7";
+		return "hi8";
 	}
 }
