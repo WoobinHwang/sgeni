@@ -7,9 +7,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class hiController {
 
-	@GetMapping
+	@GetMapping("/")
 	@ResponseBody
 	public String hi() {
+		System.out.println("main page");
 		return "hi8";
 	}
 }
