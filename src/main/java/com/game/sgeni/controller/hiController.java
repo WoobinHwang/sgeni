@@ -11,6 +11,6 @@ public class hiController {
 	@ResponseBody
 	public String hi() {
 		System.out.println("main page");
-		return "hello";
+		return "hello123";
 	}
 }
