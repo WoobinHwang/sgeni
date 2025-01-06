@@ -32,12 +32,21 @@ dependencies {
 	
 	// https://mvnrepository.com/artifact/org.postgresql/postgresql
 	implementation group: 'org.postgresql', name: 'postgresql', version: '42.7.4'
+	runtimeOnly 'org.postgresql:postgresql'
 
 	// https://mvnrepository.com/artifact/org.bgee.log4jdbc-log4j2/log4jdbc-log4j2-jdbc4.1
 	implementation group: 'org.bgee.log4jdbc-log4j2', name: 'log4jdbc-log4j2-jdbc4.1', version: '1.16'
 	
 	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa
 	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '3.4.1'
+	
+	// https://mvnrepository.com/artifact/io.github.cdimascio/dotenv-java
+	// implementation group: 'io.github.cdimascio', name: 'dotenv-java', version: '3.0.0'
+	
+	// https://mvnrepository.com/artifact/io.github.cdimascio/java-dotenv
+	implementation group: 'io.github.cdimascio', name: 'java-dotenv', version: '5.2.2'
+	
+	
 	
 }
 

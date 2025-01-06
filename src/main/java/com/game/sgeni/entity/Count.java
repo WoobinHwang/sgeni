@@ -1,5 +1,6 @@
 package com.game.sgeni.entity;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -16,8 +17,10 @@ public class Count {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	
+	@Column
 	private String word1;
 	
+	@Column
 	private String word2;
 	
 }
