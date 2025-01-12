@@ -46,6 +46,15 @@ dependencies {
 	// https://mvnrepository.com/artifact/io.github.cdimascio/java-dotenv
 	implementation group: 'io.github.cdimascio', name: 'java-dotenv', version: '5.2.2'
 	
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	
+	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-thymeleaf
+	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-thymeleaf', version: '3.4.1'
+	
+	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-websocket
+	implementation 'org.springframework.boot:spring-boot-starter-websocket:3.4.1'
+	
+	
 	
 	
 }

@@ -9,14 +9,14 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import com.game.sgeni.entity.Count;
-import com.game.sgeni.repository.CountRepository;
+import com.game.sgeni.entity.UserTable;
+import com.game.sgeni.repository.UserTableRepository;
 
 @SpringBootTest
 class SgeniApplicationTests {
 	
 	@Autowired
-	private CountRepository countRepository;
+	private UserTableRepository countRepository;
 	
 	@Test
 	void test() {
@@ -59,19 +59,21 @@ class SgeniApplicationTests {
 	@Test
 	void insertJpa() {
 		
-		Count count = new Count();
+		UserTable user = new UserTable();
 		
-		count.setWord1("테스트중");
-		count.setWord1("testing");
+		user.setUsername("아이디");
+		user.setPassword("비밀번호");
+		user.setNickname("닉네임");
 		
-		this.countRepository.save(count);
+		this.countRepository.save(user);
+		System.out.println("저장끝");
 		
 	}
 
 	@Test
 	void slectJpa() {
 		
-		List<Count> countList = this.countRepository.findAll();
+		List<UserTable> countList = this.countRepository.findAll();
 		
 		System.out.println(countList);
 		

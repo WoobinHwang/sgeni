@@ -7,20 +7,25 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 @Entity
 @Getter
 @Setter
-public class Count {
+@ToString
+public class UserTable {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer id;
+	private Integer userNum;
 	
-	@Column
-	private String word1;
+	@Column(unique = true, nullable = false)
+	private String username;
 	
-	@Column
-	private String word2;
+	@Column(unique = true, nullable = false)
+	private String password;
+	
+	@Column(unique = true, nullable = false)
+	private String nickname;
 	
 }
